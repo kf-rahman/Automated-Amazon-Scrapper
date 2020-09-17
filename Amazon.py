@@ -20,11 +20,11 @@ def send_mail():
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('kazrocks.bd@gmail.com','dpgzvlkdharnvray')
+    server.login('your email','password')
     subject = 'DROP IN PRICE!'
     body= 'Check the link: https://www.amazon.ca/Paring-Knife-Stainless-Comfortable-Ergonomic/dp/B07W7TJCQX/ref=sr_1_2_sspa?keywords=pairing+knife&qid=1590113642&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyNkhPUVpIRUsxR1VXJmVuY3J5cHRlZElkPUEwNDE4MjQxWDFCOUs1RzAyUjFEJmVuY3J5cHRlZEFkSWQ9QTAyMDUzMDJCS0w0UVdaRDg4SUEmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl'
     msg =f"Subject: {subject}\n\n {body}"
-    server.sendmail('kazrocks.bd@gmail.com','kazi.zayeed@gmail.com',msg)
+    server.sendmail('your email','who you want to send it to',msg)
     print('Email has been sent')
     server.quit()
 
